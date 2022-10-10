@@ -1,0 +1,10 @@
+{
+  "extends": "ts-config-single-spa",
+  "files": ["src/chewy-mfe-root-config.ts"],
+  "compilerOptions": {
+    "declarationDir": "dist",
+    "jsx": "react-jsx"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*"]
+}

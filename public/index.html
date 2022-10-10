@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "root-config": "http://localhost:9000/main.js",
+          "app1": "http://localhost:8080/remoteEntry.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/systemjs/dist/system.js"></script>
+    <script>
+      System.import("root-config");
+    </script>
+  </body>
+</html>
